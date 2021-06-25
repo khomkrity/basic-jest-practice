@@ -5,11 +5,12 @@ const Stack = class Stack {
   }
 
   size() {
-    return Object.keys(this.items).length;
+    let size = this.top + 1;
+    return size;
   }
 
   isEmpty() {
-    return Object.keys(this.items).length > 0 ? false : true;
+    return this.size() === 0 ? true : false;
   }
 
   push(value) {
