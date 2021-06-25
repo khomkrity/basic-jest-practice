@@ -28,16 +28,16 @@ describe('Manipulating data inside a stack', () => {
     stack.push(30);
     stack.push(40);
     stack.push(50);
-    expect(stack.items).toEqual({ 0: 40, 1: 20, 2: 30, 3: 40, 4: 50 });
+    expect(stack.items).toEqual({ 0: 10, 1: 20, 2: 30, 3: 40, 4: 50 });
     expect(stack.isEmpty()).toEqual(false);
-    expect(stak.top).toEqual(4);
+    expect(stack.top).toEqual(4);
     expect(stack.size()).toEqual(5);
     expect(stack.peek()).toEqual(50);
   });
 
   it('can pop out the top value', () => {
     expect(stack.pop()).toEqual(50);
-    expect(stack.items).toEqual({ 0: 40, 1: 20, 2: 30, 3: 40 });
+    expect(stack.items).toEqual({ 0: 10, 1: 20, 2: 30, 3: 40 });
     expect(stack.peek()).toEqual(40);
     expect(stack.size()).toEqual(4);
   });
