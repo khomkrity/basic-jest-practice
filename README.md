@@ -1,5 +1,6 @@
 # basic-jest-practice
 > Basic test-driven development introduction with javascript
+> Implementing Stack without using array
 
 ## Prerequisite
 - node package manager (npm)
